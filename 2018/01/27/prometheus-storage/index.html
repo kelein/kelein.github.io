@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://keleir.github.io/2018/01/27/prometheus-storage/index.html">
 <meta property="og:site_name" content="Kallen Ding&#39;s Blog">
 <meta property="og:description" content="Prometheus StorageOn average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula: 1needed_disk_space = retention_time_se">
-<meta property="og:updated_time" content="2018-03-27T08:02:06.513Z">
+<meta property="og:updated_time" content="2018-03-27T08:06:53.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Prometheus Storage">
 <meta name="twitter:description" content="Prometheus StorageOn average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula: 1needed_disk_space = retention_time_se">
@@ -218,12 +218,18 @@
 <p>Prometheus Version: 1.7.0<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">time</span>=<span class="string">"2017-11-20T03:58:23+08:00"</span> <span class="attribute">level</span>=error <span class="attribute">msg</span>=<span class="string">"Storage needs throttling. Scrapes and rule evaluations will be skipped."</span> <span class="attribute">chunksToPersist</span>=92938 <span class="attribute">memoryChunks</span>=493334 <span class="attribute">source</span>=<span class="string">"storage.go:1007"</span> <span class="attribute">urgencyScore</span>=1</div></pre></td></tr></table></figure></p>
 </blockquote>
 <h2 id="Refers"><a href="#Refers" class="headerlink" title="Refers"></a>Refers</h2><ul>
-<li><h5 id="KubeCon-2017-Prometheus-Takeaways"><a href="#KubeCon-2017-Prometheus-Takeaways" class="headerlink" title="KubeCon 2017 - Prometheus Takeaways"></a><a href="https://pracucci.com/kubecon-2017-prometheus-takeaways.html" target="_blank" rel="external">KubeCon 2017 - Prometheus Takeaways</a></h5></li>
-<li><h5 id="How-much-RAM-does-my-Prometheus-need-for-ingestion"><a href="#How-much-RAM-does-my-Prometheus-need-for-ingestion" class="headerlink" title="How much RAM does my Prometheus need for ingestion?"></a><a href="https://www.robustperception.io/how-much-ram-does-my-prometheus-need-for-ingestion/" target="_blank" rel="external">How much RAM does my Prometheus need for ingestion?</a></h5></li>
-<li><h5 id="Writing-a-Time-Series-Database-from-Scratch"><a href="#Writing-a-Time-Series-Database-from-Scratch" class="headerlink" title="Writing a Time Series Database from Scratch"></a><a href="https://fabxc.org/tsdb/" target="_blank" rel="external">Writing a Time Series Database from Scratch</a></h5></li>
-<li><h5 id="Continuous-Improvement-in-Monitoring-with-Prometheus-2-0"><a href="#Continuous-Improvement-in-Monitoring-with-Prometheus-2-0" class="headerlink" title="Continuous Improvement in Monitoring with Prometheus 2.0"></a><a href="https://www.opcito.com/continuous-improvement-in-monitoring-with-prometheus-2-0/" target="_blank" rel="external">Continuous Improvement in Monitoring with Prometheus 2.0</a></h5></li>
-<li><h5 id="剖析Prometheus的内部存储机制"><a href="#剖析Prometheus的内部存储机制" class="headerlink" title="剖析Prometheus的内部存储机制"></a><a href="http://www.cnblogs.com/vovlie/p/7709312.html" target="_blank" rel="external">剖析Prometheus的内部存储机制</a></h5></li>
-<li><h5 id="LevelDB-实现分析"><a href="#LevelDB-实现分析" class="headerlink" title="LevelDB 实现分析"></a><a href="http://blog.jobbole.com/111792/" target="_blank" rel="external">LevelDB 实现分析</a></h5></li>
+<li><p><a href="https://pracucci.com/kubecon-2017-prometheus-takeaways.html" target="_blank" rel="external">KubeCon 2017 - Prometheus Takeaways</a></p>
+</li>
+<li><p><a href="https://www.robustperception.io/how-much-ram-does-my-prometheus-need-for-ingestion/" target="_blank" rel="external">How much RAM does my Prometheus need for ingestion?</a></p>
+</li>
+<li><p><a href="https://fabxc.org/tsdb/" target="_blank" rel="external">Writing a Time Series Database from Scratch</a></p>
+</li>
+<li><p><a href="https://www.opcito.com/continuous-improvement-in-monitoring-with-prometheus-2-0/" target="_blank" rel="external">Continuous Improvement in Monitoring with Prometheus 2.0</a></p>
+</li>
+<li><p><a href="http://www.cnblogs.com/vovlie/p/7709312.html" target="_blank" rel="external">剖析Prometheus的内部存储机制</a></p>
+</li>
+<li><p><a href="http://blog.jobbole.com/111792/" target="_blank" rel="external">LevelDB 实现分析</a></p>
+</li>
 </ul>
 <h2 id="Research"><a href="#Research" class="headerlink" title="Research"></a>Research</h2><ul>
 <li><p>Prometheus WAL Log</p>
@@ -435,11 +441,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
+                <a href="javascript:void(0)" class="js-tag color2">django</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -451,15 +453,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">plan</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">point</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">django</a>
               </li>
              
               <li class="article-tag-list-item">
