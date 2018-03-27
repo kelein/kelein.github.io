@@ -6,21 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://keleir.github.io">
-  <title>《追风筝的人》读书札记 | Kallen Ding&#39;s Blog</title>
+  <title>Prometheus Storage | Kallen Ding&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="真正的男人不看诗——真主也禁止他们创作呢。真正的男人——真正的男孩——应该像爸爸小时候那样踢足球去，那才是值得付出热情的玩意儿。 十二岁以前，我大部分时间都在跟哈桑玩耍。有时候回想起来，我的整个童年，似乎就是和哈桑一起度过的某个懒洋洋的悠长夏日，我们在爸爸院子里那些交错的树木中彼此追逐，玩捉迷藏，玩警察与强盗，玩牛仔和印第安人，折磨昆虫——我们拔掉蜜蜂的尖刺，在那可怜的东西身上系根绳子，每当它想">
-<meta name="keywords" content="reading,books">
+  <meta name="description" content="Prometheus StorageOn average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula: 1needed_disk_space = retention_time_se">
+<meta name="keywords" content="prometheus">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《追风筝的人》读书札记">
-<meta property="og:url" content="http://keleir.github.io/2016/05/16/the-kite-runner-reading-notes/index.html">
+<meta property="og:title" content="Prometheus Storage">
+<meta property="og:url" content="http://keleir.github.io/2018/01/27/prometheus-storage/index.html">
 <meta property="og:site_name" content="Kallen Ding&#39;s Blog">
-<meta property="og:description" content="真正的男人不看诗——真主也禁止他们创作呢。真正的男人——真正的男孩——应该像爸爸小时候那样踢足球去，那才是值得付出热情的玩意儿。 十二岁以前，我大部分时间都在跟哈桑玩耍。有时候回想起来，我的整个童年，似乎就是和哈桑一起度过的某个懒洋洋的悠长夏日，我们在爸爸院子里那些交错的树木中彼此追逐，玩捉迷藏，玩警察与强盗，玩牛仔和印第安人，折磨昆虫——我们拔掉蜜蜂的尖刺，在那可怜的东西身上系根绳子，每当它想">
-<meta property="og:image" content="https://github.com/Keleir/IMGDB/blob/master/Blog/the_kite_runner.jpg?raw=true">
-<meta property="og:updated_time" content="2017-06-15T17:55:57.005Z">
+<meta property="og:description" content="Prometheus StorageOn average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula: 1needed_disk_space = retention_time_se">
+<meta property="og:updated_time" content="2018-03-27T08:02:06.513Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《追风筝的人》读书札记">
-<meta name="twitter:description" content="真正的男人不看诗——真主也禁止他们创作呢。真正的男人——真正的男孩——应该像爸爸小时候那样踢足球去，那才是值得付出热情的玩意儿。 十二岁以前，我大部分时间都在跟哈桑玩耍。有时候回想起来，我的整个童年，似乎就是和哈桑一起度过的某个懒洋洋的悠长夏日，我们在爸爸院子里那些交错的树木中彼此追逐，玩捉迷藏，玩警察与强盗，玩牛仔和印第安人，折磨昆虫——我们拔掉蜜蜂的尖刺，在那可怜的东西身上系根绳子，每当它想">
-<meta name="twitter:image" content="https://github.com/Keleir/IMGDB/blob/master/Blog/the_kite_runner.jpg?raw=true">
+<meta name="twitter:title" content="Prometheus Storage">
+<meta name="twitter:description" content="Prometheus StorageOn average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula: 1needed_disk_space = retention_time_se">
   
     <link rel="alternative" href="/atom.xml" title="Kallen Ding&#39;s Blog" type="application/atom+xml">
   
@@ -152,33 +150,89 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-the-kite-runner-reading-notes" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-prometheus-storage" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      《追风筝的人》读书札记
+      Prometheus Storage
     </h1>
   
 
         
-        <a href="/2016/05/16/the-kite-runner-reading-notes/" class="archive-article-date">
-  	<time datetime="2016-05-16T06:32:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-16</time>
+        <a href="/2018/01/27/prometheus-storage/" class="archive-article-date">
+  	<time datetime="2018-01-27T07:59:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://github.com/Keleir/IMGDB/blob/master/Blog/the_kite_runner.jpg?raw=true" alt="kite"></p>
-<p>真正的男人不看诗——真主也禁止他们创作呢。真正的男人——真正的男孩——应该像爸爸小时候那样踢足球去，那才是值得付出热情的玩意儿。</p>
-<p>十二岁以前，我大部分时间都在跟哈桑玩耍。有时候回想起来，我的整个童年，似乎就是和哈桑一起度过的某个懒洋洋的悠长夏日，我们在爸爸院子里那些交错的树木中彼此追逐，玩捉迷藏，玩警察与强盗，玩牛仔和印第安人，折磨昆虫——我们拔掉蜜蜂的尖刺，在那可怜的东西身上系根绳子，每当它想展翅飞走，就把它拉回来，这带给我们无与伦比的快乐。</p>
-<p>那是个悲伤的小故事，讲的是有个男人发现了一个魔法杯，得知如果他对着杯子哭泣，掉进杯里的眼泪会变成珍珠。可尽管一贫如洗，他却是个快乐的家伙，罕得流泪。于是他想方设法，让自己悲伤，以便那些眼泪会变成他的财富。珍珠越积越多，他越来越贪婪。小说的结尾是，那男人坐在一座珠宝山上，手里提着刀，怀中抱着他深爱着的妻子死于非命的尸体，无助地将眼泪滴进魔法杯。</p>
-<a id="more"></a>
-<p>我朝西望去，觉得真是奇妙，在峰峦那边的某处，喀布尔依然存在。它真的存在，不只是久远的记忆，不只是《旧金山纪事报》第十五版上某篇美联社报道的标题。西方的山脉那边某个地方有座沉睡的城市，我的兔唇弟弟和我曾在那里追过风筝。那边某个地方，我梦中那个蒙着眼的男人死于非命。曾经，在山那边，我作过一个抉择。而如今，时隔四分之一个世纪，正是那个抉择让我重返这片土地。</p>
-<p>它只是一个微笑，没有别的了。它没有让所有事情恢复正常。它没有让任何事情恢复正常。只是一个微笑，一件小小的事情，像是树林中的一片叶子，在惊鸟的飞起中晃动着。<br>但我会迎接它，张开双臂。因为每逢春天到来，它总是每次融化一片雪花；而也许我刚刚看到的，正是第一片雪花的融化。</p>
+        <h1 id="Prometheus-Storage"><a href="#Prometheus-Storage" class="headerlink" title="Prometheus Storage"></a>Prometheus Storage</h1><p>On average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula:</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">needed_disk_space</span> = retention_time_seconds * ingested_samples_per_second * bytes_per_sample</div></pre></td></tr></table></figure>
+<h2 id="Concepts"><a href="#Concepts" class="headerlink" title="Concepts"></a>Concepts</h2><ul>
+<li>chunks this data together in chunks of constant size (<code>1024 bytes</code>)</li>
+<li>keeps all the currently used (incomplete) chunks in memory</li>
+<li>batch up write operations to store chunks on disk</li>
+</ul>
+<h2 id="Optimize"><a href="#Optimize" class="headerlink" title="Optimize"></a>Optimize</h2><h3 id="Memory-Options"><a href="#Memory-Options" class="headerlink" title="Memory Options"></a>Memory Options</h3><ul>
+<li><code>storage.local.memory-chunks</code></li>
+</ul>
+<blockquote>
+<p>how many chunks can Prometheus keep in memory. Remember, it’s the number of chunks, not the size in bytes.<br>Suggested value: <code>&lt;total memory in bytes&gt; / 1024 / 6</code>.</p>
+</blockquote>
+<ul>
+<li><code>storage.local.max-chunks-to-persist</code></li>
+</ul>
+<blockquote>
+<p>how many chunks can be waiting to be written to the disk.<br>Suggested value: <code>memory-chunks / 2</code></p>
+</blockquote>
+<h3 id="The-rushed-mode"><a href="#The-rushed-mode" class="headerlink" title="The rushed mode"></a>The rushed mode</h3><blockquote>
+<p>When the number of chunks in memory, waiting to be persisted to disk, grows too much, Prometheus enters <code>the rushed mode</code> and speed up persisting chunks. </p>
+</blockquote>
+<p>Prometheus calculate an urgency score, as the number of chunks waiting for persistence in relation to <code>max-chunks-to-persist</code> and on how much the number of chunks in memory exceeds the <code>memory-chunks</code>.</p>
+<ul>
+<li>urgency_score &gt; 0.8: Enter Rushed Mode</li>
+<li>urgency_score &lt; 0.7: Leave Rushed Mode</li>
+</ul>
+<h2 id="Snapshot"><a href="#Snapshot" class="headerlink" title="Snapshot"></a>Snapshot</h2><h3 id="Snapshot-API"><a href="#Snapshot-API" class="headerlink" title="Snapshot API"></a>Snapshot API</h3><blockquote>
+<p>Prometheus V2.0 提供了snapshot机制用于TSDB Backend数据备份, 创建快照API开启方式:  <code>--web.enable-admin-api</code> </p>
+</blockquote>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>curl -XPOST <span class="symbol">http:</span>/<span class="regexp">/localhost:9090/api</span><span class="regexp">/v2/admin</span><span class="regexp">/tsdb/snapshot</span></div><div class="line"></div><div class="line"><span class="variable">$ </span>curl -X POST <span class="symbol">http:</span>/<span class="regexp">/prometheus.in.dataengine.com/api</span><span class="regexp">/v2/admin</span><span class="regexp">/tsdb/snapshot</span></div><div class="line"></div><div class="line"></div><div class="line">&#123;</div><div class="line">  <span class="string">"name"</span>: <span class="string">"2017-12-05T06:42:03Z-32d47b4db4c3e108"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h5 id="Data-Directory"><a href="#Data-Directory" class="headerlink" title="Data Directory"></a>Data Directory</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">data</span></div><div class="line">├── 01<span class="selector-tag">C0JGQ905RK2ZZCQS8F7VSNV7</span></div><div class="line">│   ├── <span class="selector-tag">chunks</span></div><div class="line">│   ├── <span class="selector-tag">index</span></div><div class="line">│   ├── <span class="selector-tag">meta</span><span class="selector-class">.json</span></div><div class="line">│   └── <span class="selector-tag">tombstones</span></div><div class="line">├── 01<span class="selector-tag">C0JQJTVZ6JC5MQJFSG145979</span></div><div class="line">│   ├── <span class="selector-tag">chunks</span></div><div class="line">│   ├── <span class="selector-tag">index</span></div><div class="line">│   ├── <span class="selector-tag">meta</span><span class="selector-class">.json</span></div><div class="line">│   └── <span class="selector-tag">tombstones</span></div><div class="line">├── <span class="selector-tag">lock</span></div><div class="line">├── <span class="selector-tag">snapshots</span></div><div class="line">│   ├── 2017<span class="selector-tag">-12-05T06</span><span class="selector-pseudo">:42</span><span class="selector-pseudo">:03Z-32d47b4db4c3e108</span></div><div class="line">│   └── 2017<span class="selector-tag">-12-05T06</span><span class="selector-pseudo">:42</span><span class="selector-pseudo">:44Z-6be0c2980c1989c5</span></div><div class="line">└── <span class="selector-tag">wal</span></div><div class="line">    ├── 000001</div><div class="line">    └── 000002</div></pre></td></tr></table></figure>
+<h5 id="Snapshot-Directory"><a href="#Snapshot-Directory" class="headerlink" title="Snapshot Directory"></a>Snapshot Directory</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">2017<span class="selector-tag">-12-05T06</span><span class="selector-pseudo">:42</span><span class="selector-pseudo">:44Z-6be0c2980c1989c5</span></div><div class="line">└── 01<span class="selector-tag">C0K07PSNB97D6TXJQ7YE9ST1</span></div><div class="line">    ├── <span class="selector-tag">chunks</span></div><div class="line">    │   └── 000001</div><div class="line">    ├── <span class="selector-tag">index</span></div><div class="line">    ├── <span class="selector-tag">meta</span><span class="selector-class">.json</span></div><div class="line">    └── <span class="selector-tag">tombstones</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>meta.json</p>
+</blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"version"</span>: <span class="number">1</span>,</div><div class="line">  <span class="attr">"ulid"</span>: <span class="string">"01C0JPHXJ8BBG194HPNZFP7AR7"</span>,</div><div class="line">  <span class="attr">"minTime"</span>: <span class="number">1512446400000</span>,</div><div class="line">  <span class="attr">"maxTime"</span>: <span class="number">1512456122548</span>,</div><div class="line">  <span class="attr">"stats"</span>: &#123;</div><div class="line">    <span class="attr">"numSamples"</span>: <span class="number">321304</span>,</div><div class="line">    <span class="attr">"numSeries"</span>: <span class="number">604</span>,</div><div class="line">    <span class="attr">"numChunks"</span>: <span class="number">3020</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"compaction"</span>: &#123;</div><div class="line">    <span class="attr">"level"</span>: <span class="number">1</span>,</div><div class="line">    <span class="attr">"sources"</span>: [</div><div class="line">      <span class="string">"01C0JPHXJ8BBG194HPNZFP7AR7"</span></div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>maxTime - minTime = storage.tsdb.min-block-duration</strong>  (default: 2h)</li>
+<li>meta.json 文件存储了 series 起止时间 / metircs 数量 / block 目录名称;</li>
+<li>每个snapshot 由一个或多个 Chunk Block 组成, 这些Block 共同存储了Prometheus TSDB 的全量数据; </li>
+<li>Chunk Block 生成的数量由 storage.tsdb.min-block-duration 和 storage.tsdb.max-block-duration 控制; </li>
+</ul>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">caller</span>=compact.go:361 <span class="attribute">component</span>=tsdb <span class="attribute">msg</span>=<span class="string">"compact blocks"</span> <span class="attribute">count</span>=1</div><div class="line"><span class="attribute">mint</span>=1512532800000 <span class="attribute">maxt</span>=1512539893781</div></pre></td></tr></table></figure>
+<blockquote>
+<p>Prometheus Version: 1.7.0<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">time</span>=<span class="string">"2017-11-20T03:58:23+08:00"</span> <span class="attribute">level</span>=error <span class="attribute">msg</span>=<span class="string">"Storage needs throttling. Scrapes and rule evaluations will be skipped."</span> <span class="attribute">chunksToPersist</span>=92938 <span class="attribute">memoryChunks</span>=493334 <span class="attribute">source</span>=<span class="string">"storage.go:1007"</span> <span class="attribute">urgencyScore</span>=1</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="Refers"><a href="#Refers" class="headerlink" title="Refers"></a>Refers</h2><ul>
+<li><h5 id="KubeCon-2017-Prometheus-Takeaways"><a href="#KubeCon-2017-Prometheus-Takeaways" class="headerlink" title="KubeCon 2017 - Prometheus Takeaways"></a><a href="https://pracucci.com/kubecon-2017-prometheus-takeaways.html" target="_blank" rel="external">KubeCon 2017 - Prometheus Takeaways</a></h5></li>
+<li><h5 id="How-much-RAM-does-my-Prometheus-need-for-ingestion"><a href="#How-much-RAM-does-my-Prometheus-need-for-ingestion" class="headerlink" title="How much RAM does my Prometheus need for ingestion?"></a><a href="https://www.robustperception.io/how-much-ram-does-my-prometheus-need-for-ingestion/" target="_blank" rel="external">How much RAM does my Prometheus need for ingestion?</a></h5></li>
+<li><h5 id="Writing-a-Time-Series-Database-from-Scratch"><a href="#Writing-a-Time-Series-Database-from-Scratch" class="headerlink" title="Writing a Time Series Database from Scratch"></a><a href="https://fabxc.org/tsdb/" target="_blank" rel="external">Writing a Time Series Database from Scratch</a></h5></li>
+<li><h5 id="Continuous-Improvement-in-Monitoring-with-Prometheus-2-0"><a href="#Continuous-Improvement-in-Monitoring-with-Prometheus-2-0" class="headerlink" title="Continuous Improvement in Monitoring with Prometheus 2.0"></a><a href="https://www.opcito.com/continuous-improvement-in-monitoring-with-prometheus-2-0/" target="_blank" rel="external">Continuous Improvement in Monitoring with Prometheus 2.0</a></h5></li>
+<li><h5 id="剖析Prometheus的内部存储机制"><a href="#剖析Prometheus的内部存储机制" class="headerlink" title="剖析Prometheus的内部存储机制"></a><a href="http://www.cnblogs.com/vovlie/p/7709312.html" target="_blank" rel="external">剖析Prometheus的内部存储机制</a></h5></li>
+<li><h5 id="LevelDB-实现分析"><a href="#LevelDB-实现分析" class="headerlink" title="LevelDB 实现分析"></a><a href="http://blog.jobbole.com/111792/" target="_blank" rel="external">LevelDB 实现分析</a></h5></li>
+</ul>
+<h2 id="Research"><a href="#Research" class="headerlink" title="Research"></a>Research</h2><ul>
+<li><p>Prometheus WAL Log</p>
+</li>
+<li><p>Chunk Data </p>
+</li>
+<li><p>Snapshot </p>
+</li>
+</ul>
 
       
 
@@ -192,11 +246,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">reading</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">books</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">prometheus</a>
         		</li>
       		
 		</ul>
@@ -252,7 +302,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://keleir.github.io/2016/05/16/the-kite-runner-reading-notes/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://keleir.github.io/2018/01/27/prometheus-storage/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -266,18 +316,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/02/key-points/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          近期学习计划
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/04/07/flask-learning-notes/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Flask基础简介</div>
+    <a href="/2018/01/27/prometheus-in-practice/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Prometheus in Practice</div>
       <i class="icon-circle-right"></i>
     </a>
   
