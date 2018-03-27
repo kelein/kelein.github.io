@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://keleir.github.io/2016/03/04/fronted-useful-tips/index.html">
 <meta property="og:site_name" content="Kallen Ding&#39;s Blog">
 <meta property="og:description" content="1.Bootstrap Modal Draggable12345678$(document).on(&quot;show.bs.modal&quot;, &quot;.modal&quot;, function()&amp;#123;    $(this).draggable(&amp;#123;        // handle: &quot;.modal-header&quot;         // 只能点击头部拖动    &amp;#125;);    $(this).c">
-<meta property="og:updated_time" content="2017-06-09T15:54:43.296Z">
+<meta property="og:updated_time" content="2018-03-27T08:20:12.276Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端知识点汇总">
 <meta name="twitter:description" content="1.Bootstrap Modal Draggable12345678$(document).on(&quot;show.bs.modal&quot;, &quot;.modal&quot;, function()&amp;#123;    $(this).draggable(&amp;#123;        // handle: &quot;.modal-header&quot;         // 只能点击头部拖动    &amp;#125;);    $(this).c">
@@ -171,6 +171,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="1-Bootstrap-Modal-Draggable"><a href="#1-Bootstrap-Modal-Draggable" class="headerlink" title="1.Bootstrap Modal Draggable"></a>1.Bootstrap Modal Draggable</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(<span class="built_in">document</span>).on(<span class="string">"show.bs.modal"</span>, <span class="string">".modal"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    $(<span class="keyword">this</span>).draggable(&#123;</div><div class="line">        <span class="comment">// handle: ".modal-header" </span></div><div class="line">        <span class="comment">// 只能点击头部拖动</span></div><div class="line">    &#125;);</div><div class="line">    $(<span class="keyword">this</span>).css(<span class="string">"overflow"</span>, <span class="string">"hidden"</span>); </div><div class="line">    <span class="comment">// 防止出现滚动条，出现的话，你会把滚动条一起拖着走的</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>show.bs.modal: 在调用 show 方法后触发。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#identifier"</span>).on(<span class="string">'show.bs.modal'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//do sth. &#125;);</span></div></pre></td></tr></table></figure></p>
 <p>show.bs.modal    当模态框对用户可见时触发（将等待 CSS 过渡效果完成）。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#identifier"</span>).on(<span class="string">'shown.bs.modal'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//do sth. &#125;);</span></div></pre></td></tr></table></figure></p>
 <p>hide.bs.modal    当调用 hide 方法时触发。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#identifier"</span>).on(<span class="string">'hide.bs.modal'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//do sth. &#125;);</span></div></pre></td></tr></table></figure></p>
@@ -515,19 +516,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">plan</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">point</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">plan</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">point</a>
               </li>
              
               <li class="article-tag-list-item">

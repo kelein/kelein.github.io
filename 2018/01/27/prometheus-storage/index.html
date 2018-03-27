@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://keleir.github.io">
   <title>Prometheus Storage | Kallen Ding&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Prometheus StorageOn average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula: 1needed_disk_space = retention_time_se">
+  <meta name="description" content="Prometheus Storage On average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula:  1needed_disk_space = retention_time_">
 <meta name="keywords" content="prometheus">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Prometheus Storage">
 <meta property="og:url" content="http://keleir.github.io/2018/01/27/prometheus-storage/index.html">
 <meta property="og:site_name" content="Kallen Ding&#39;s Blog">
-<meta property="og:description" content="Prometheus StorageOn average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula: 1needed_disk_space = retention_time_se">
-<meta property="og:updated_time" content="2018-03-27T08:15:18.954Z">
+<meta property="og:description" content="Prometheus Storage On average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula:  1needed_disk_space = retention_time_">
+<meta property="og:updated_time" content="2018-03-27T08:21:55.068Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Prometheus Storage">
-<meta name="twitter:description" content="Prometheus StorageOn average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula: 1needed_disk_space = retention_time_se">
+<meta name="twitter:description" content="Prometheus Storage On average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula:  1needed_disk_space = retention_time_">
   
     <link rel="alternative" href="/atom.xml" title="Kallen Ding&#39;s Blog" type="application/atom+xml">
   
@@ -170,7 +170,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Prometheus-Storage"><a href="#Prometheus-Storage" class="headerlink" title="Prometheus Storage"></a>Prometheus Storage</h1><p>On average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula:</p>
+        <h1 id="Prometheus-Storage"><a href="#Prometheus-Storage" class="headerlink" title="Prometheus Storage"></a>Prometheus Storage</h1><blockquote>
+<p>On average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula:</p>
+</blockquote>
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">needed_disk_space</span> = retention_time_seconds * ingested_samples_per_second * bytes_per_sample</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <h2 id="Concepts"><a href="#Concepts" class="headerlink" title="Concepts"></a>Concepts</h2><ul>
@@ -314,6 +316,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/03/27/key-points/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          近期学习计划
+        
+      </div>
+    </a>
+  
   
     <a href="/2018/01/27/prometheus-in-practice/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Prometheus in Practice</div>
@@ -445,19 +456,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">plan</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">point</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">plan</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">point</a>
               </li>
              
               <li class="article-tag-list-item">

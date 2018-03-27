@@ -8,18 +8,15 @@
   <link rel="dns-prefetch" href="http://keleir.github.io">
   <title>Memcache简易说明 | Kallen Ding&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.安装memcached12yum install memcachedmemcached -h 2.启动memcached1memcached -d -m 100 -c 1000 -u root -p 33060 参数说明：12345678910111213-d  启动一个守护进程-m  分配给Memcache使用的内存数量，单位是MB，默认为64M-u  运行Memcache的用户(only">
-<meta name="keywords" content="memcache">
+  <meta name="keywords" content="memcache">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Memcache简易说明">
 <meta property="og:url" content="http://keleir.github.io/2016/01/14/memcached-brief-usage/index.html">
 <meta property="og:site_name" content="Kallen Ding&#39;s Blog">
-<meta property="og:description" content="1.安装memcached12yum install memcachedmemcached -h 2.启动memcached1memcached -d -m 100 -c 1000 -u root -p 33060 参数说明：12345678910111213-d  启动一个守护进程-m  分配给Memcache使用的内存数量，单位是MB，默认为64M-u  运行Memcache的用户(only">
 <meta property="og:image" content="http://memcached.org/images/memcached_banner75.jpg">
-<meta property="og:updated_time" content="2017-06-09T15:54:43.296Z">
+<meta property="og:updated_time" content="2018-03-27T08:21:05.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Memcache简易说明">
-<meta name="twitter:description" content="1.安装memcached12yum install memcachedmemcached -h 2.启动memcached1memcached -d -m 100 -c 1000 -u root -p 33060 参数说明：12345678910111213-d  启动一个守护进程-m  分配给Memcache使用的内存数量，单位是MB，默认为64M-u  运行Memcache的用户(only">
 <meta name="twitter:image" content="http://memcached.org/images/memcached_banner75.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Kallen Ding&#39;s Blog" type="application/atom+xml">
@@ -173,6 +170,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://memcached.org/images/memcached_banner75.jpg" alt="memcached"></p>
+<a id="more"></a>
 <h3 id="1-安装memcached"><a href="#1-安装memcached" class="headerlink" title="1.安装memcached"></a>1.安装memcached</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">yum <span class="keyword">install</span> memcached</div><div class="line">memcached -h</div></pre></td></tr></table></figure>
 <h3 id="2-启动memcached"><a href="#2-启动memcached" class="headerlink" title="2.启动memcached"></a>2.启动memcached</h3><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">memcached -d -m <span class="number">100</span> -c <span class="number">1000</span> -u root -p <span class="number">33060</span></div></pre></td></tr></table></figure>
 <h4 id="参数说明："><a href="#参数说明：" class="headerlink" title="参数说明："></a>参数说明：</h4><figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">-<span class="ruby">d  启动一个守护进程</span></div><div class="line"></div><div class="line">-<span class="ruby">m  分配给Memcache使用的内存数量，单位是MB，默认为<span class="number">64</span>M</span></div><div class="line"></div><div class="line">-<span class="ruby">u  运行Memcache的用户(only <span class="keyword">when</span> run as root)</span></div><div class="line"></div><div class="line">-<span class="ruby">l  监听的服务器IP地址</span></div><div class="line"></div><div class="line">-<span class="ruby">p  Memcache监听的端口,默认为<span class="number">11211</span>，最好是<span class="number">1024</span>以上的端口</span></div><div class="line"></div><div class="line">-<span class="ruby">c  最大运行的并发连接数，默认是<span class="number">1024</span>，按照服务器的负载量来设定</span></div><div class="line"></div><div class="line">-<span class="ruby">P  设置保存Memcache的pid文件</span></div></pre></td></tr></table></figure>
@@ -466,19 +464,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">plan</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">point</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">plan</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">point</a>
               </li>
              
               <li class="article-tag-list-item">
