@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://keleir.github.io">
-  <title>Kallen Ding&#39;s Blog</title>
+  <title>Prometheus Service Discovery | Kallen Ding&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Kallen Ding&#39;s Blog">
-<meta property="og:url" content="http://keleir.github.io/index.html">
+  <meta name="description" content="Prometheus Service DiscoveryService Discovery Build-in Service Discovery JSON file Service Discovery Consul Service Discovery">
+<meta name="keywords" content="prometheus">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Prometheus Service Discovery">
+<meta property="og:url" content="http://keleir.github.io/2018/03/27/prometheus-service-discovery/index.html">
 <meta property="og:site_name" content="Kallen Ding&#39;s Blog">
+<meta property="og:description" content="Prometheus Service DiscoveryService Discovery Build-in Service Discovery JSON file Service Discovery Consul Service Discovery">
+<meta property="og:updated_time" content="2018-03-27T08:33:30.451Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kallen Ding&#39;s Blog">
+<meta name="twitter:title" content="Prometheus Service Discovery">
+<meta name="twitter:description" content="Prometheus Service DiscoveryService Discovery Build-in Service Discovery JSON file Service Discovery Consul Service Discovery">
   
     <link rel="alternative" href="/atom.xml" title="Kallen Ding&#39;s Blog" type="application/atom+xml">
   
@@ -145,16 +150,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-prometheus-service-discovery" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-prometheus-service-discovery" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/27/prometheus-service-discovery/">Prometheus Service Discovery</a>
+    <h1 class="article-title" itemprop="name">
+      Prometheus Service Discovery
     </h1>
   
 
@@ -172,410 +175,49 @@
 <li>JSON file Service Discovery</li>
 <li>Consul Service Discovery</li>
 </ul>
-        
-          <a class="article-more-a" href="/2018/03/27/prometheus-service-discovery/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">prometheus</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/27/prometheus-service-discovery/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-prometheus-storage" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/27/prometheus-storage/">Prometheus Storage</a>
-    </h1>
-  
-
-        
-        <a href="/2018/02/27/prometheus-storage/" class="archive-article-date">
-  	<time datetime="2018-02-27T07:59:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Prometheus-Storage"><a href="#Prometheus-Storage" class="headerlink" title="Prometheus Storage"></a>Prometheus Storage</h1><blockquote>
-<p>On average, Prometheus uses only around 1-2 bytes per sample. Thus, to plan the capacity of a Prometheus server, you can use the rough formula:</p>
+<a id="more"></a>
+<h3 id="1-Build-in-Discovery"><a href="#1-Build-in-Discovery" class="headerlink" title="(1) Build-in Discovery"></a>(1) Build-in Discovery</h3><blockquote>
+<p>prometheus/retrieval/targetmanager.go</p>
 </blockquote>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">needed_disk_space</span> = retention_time_seconds * ingested_samples_per_second * bytes_per_sample</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2018/02/27/prometheus-storage/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">prometheus</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/27/prometheus-storage/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-prometheus-in-practice" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/27/prometheus-in-practice/">Prometheus in Practice</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/27/prometheus-in-practice/" class="archive-article-date">
-  	<time datetime="2018-01-27T07:46:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Prometheus"><a href="#Prometheus" class="headerlink" title="Prometheus"></a>Prometheus</h1><p><img src="https://ordina-jworks.github.io/img/prometheus/prometheus-architecture.svg" alt="Archture"></p>
-        
-          <a class="article-more-a" href="/2018/01/27/prometheus-in-practice/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">prometheus</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/27/prometheus-in-practice/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-the-kite-runner-reading-notes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/16/the-kite-runner-reading-notes/">《追风筝的人》读书札记</a>
-    </h1>
-  
-
-        
-        <a href="/2016/05/16/the-kite-runner-reading-notes/" class="archive-article-date">
-  	<time datetime="2016-05-16T06:32:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://github.com/Keleir/IMGDB/blob/master/Blog/the_kite_runner.jpg?raw=true" alt="kite"></p>
-        
-          <a class="article-more-a" href="/2016/05/16/the-kite-runner-reading-notes/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">reading</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">books</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/05/16/the-kite-runner-reading-notes/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-flask-learning-notes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/07/flask-learning-notes/">Flask基础简介</a>
-    </h1>
-  
-
-        
-        <a href="/2016/04/07/flask-learning-notes/" class="archive-article-date">
-  	<time datetime="2016-04-07T08:51:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-04-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://docs.jinkan.org/docs/flask/_images/logo-full.png" alt="flask"></p>
-        
-          <a class="article-more-a" href="/2016/04/07/flask-learning-notes/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">flask</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">route</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/04/07/flask-learning-notes/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-fronted-useful-tips" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/04/fronted-useful-tips/">前端知识点汇总</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/04/fronted-useful-tips/" class="archive-article-date">
-  	<time datetime="2016-03-04T02:59:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-Bootstrap-Modal-Draggable"><a href="#1-Bootstrap-Modal-Draggable" class="headerlink" title="1.Bootstrap Modal Draggable"></a>1.Bootstrap Modal Draggable</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(<span class="built_in">document</span>).on(<span class="string">"show.bs.modal"</span>, <span class="string">".modal"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    $(<span class="keyword">this</span>).draggable(&#123;</div><div class="line">        <span class="comment">// handle: ".modal-header" </span></div><div class="line">        <span class="comment">// 只能点击头部拖动</span></div><div class="line">    &#125;);</div><div class="line">    $(<span class="keyword">this</span>).css(<span class="string">"overflow"</span>, <span class="string">"hidden"</span>); </div><div class="line">    <span class="comment">// 防止出现滚动条，出现的话，你会把滚动条一起拖着走的</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2016/03/04/fronted-useful-tips/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jquery</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/04/fronted-useful-tips/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-django-learning-notes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/28/django-learning-notes/">Django基础简介</a>
-    </h1>
-  
-
-        
-        <a href="/2016/02/28/django-learning-notes/" class="archive-article-date">
-  	<time datetime="2016-02-28T10:50:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-02-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-Django-Intor"><a href="#1-Django-Intor" class="headerlink" title="1.Django Intor"></a>1.Django Intor</h3><blockquote>
-<p>官方网站：<a href="https://www.djangoproject.com/" target="_blank" rel="external">https://www.djangoproject.com/</a><br>开源地址：<a href="https://github.com/django/django" target="_blank" rel="external">https://github.com/django/django</a></p>
+<ul>
+<li><p>Sources() []string，返回当前provider的标示。target manager将返回的string作为target group的ID</p>
+</li>
+<li><p>Run(up chan&lt;- config.TargetGroup, done &lt;-chan struct{})，启动target provider。provider会将最新的target group信息输出到up这个channel中，以通知target manager。</p>
+</li>
+</ul>
+<blockquote>
+<p>prometheus/config/config.go</p>
 </blockquote>
-        
-          <a class="article-more-a" href="/2016/02/28/django-learning-notes/#more">more >></a>
-        
+<ul>
+<li>Targets，会被prometheus解析，用于获得target metrics的访问信息，会被添加到metrics记录上；</li>
+<li>Labels，普通的label，会被添加到metrics记录上；</li>
+<li>Source，等同于ID。</li>
+</ul>
+<h4 id="Kubernetes-sd-config"><a href="#Kubernetes-sd-config" class="headerlink" title="Kubernetes sd_config"></a>Kubernetes sd_config</h4><figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">- job_name: kubelets</div><div class="line"><span class="symbol">  scrape_interval:</span> <span class="number">1</span>m</div><div class="line"><span class="symbol">  scrape_timeout:</span> <span class="number">10</span>s</div><div class="line"><span class="symbol">  metrics_path:</span> /metrics</div><div class="line"><span class="symbol">  scheme:</span> https</div><div class="line"><span class="symbol">  kubernetes_sd_configs:</span></div><div class="line">  - api_server: null</div><div class="line"><span class="symbol">    role:</span> node</div><div class="line"><span class="symbol">    namespaces:</span></div><div class="line"><span class="symbol">      names:</span> []</div><div class="line"><span class="symbol">  bearer_token_file:</span> <span class="meta-keyword">/var/</span>run<span class="meta-keyword">/secrets/</span>kubernetes.io<span class="meta-keyword">/serviceaccount/</span>token</div><div class="line"><span class="symbol">  tls_config:</span></div><div class="line"><span class="symbol">    ca_file:</span> <span class="meta-keyword">/var/</span>run<span class="meta-keyword">/secrets/</span>kubernetes.io<span class="meta-keyword">/serviceaccount/</span>ca.crt</div><div class="line"><span class="symbol">    insecure_skip_verify:</span> true</div></pre></td></tr></table></figure>
+<h3 id="2-JSON-file-service-discovery"><a href="#2-JSON-file-service-discovery" class="headerlink" title="(2) JSON file service discovery"></a>(2) JSON file service discovery</h3><figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">scrape_configs:</div><div class="line">  -<span class="ruby"> <span class="symbol">job_name:</span> <span class="string">'dummy'</span>  <span class="comment"># This is a default value, it is mandatory.</span></span></div><div class="line">    file_sd_configs:</div><div class="line">      -<span class="ruby"> <span class="symbol">files:</span></span></div><div class="line">        -<span class="ruby"> targets.json</span></div></pre></td></tr></table></figure>
+<figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">-<span class="ruby"> <span class="symbol">job_name:</span> <span class="string">'test'</span></span></div><div class="line">  scrape_interval: '1s'</div><div class="line">  file_sd_configs:</div><div class="line">    -<span class="ruby"> <span class="symbol">files:</span></span></div><div class="line">      -<span class="ruby"> <span class="string">'sd_configs/*.json'</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">  &#123;</div><div class="line">    <span class="attr">"targets"</span>: [</div><div class="line">      <span class="string">"localhost:10003"</span></div><div class="line">    ],</div><div class="line">    <span class="attr">"labels"</span>: &#123;</div><div class="line">      <span class="attr">"job"</span>: <span class="string">"ExporterInc"</span></div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="builtin-name">INFO</span>[0000] Starting target manager<span class="built_in">..</span>.                    <span class="attribute">source</span>=<span class="string">"targetmanager.go:63"</span></div></pre></td></tr></table></figure>
+<h3 id="3-Consul-Discovery"><a href="#3-Consul-Discovery" class="headerlink" title="(3) Consul Discovery"></a>(3) Consul Discovery</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">scrape_configs</span>:  </div><div class="line"> - <span class="attribute">job_name</span>: consul</div><div class="line">   <span class="attribute">consul_sd_configs</span>:</div><div class="line">     - <span class="attribute">server</span>: <span class="string">'localhost:8500'</span></div><div class="line">   <span class="attribute">relabel_configs</span>:</div><div class="line">     - <span class="attribute">source_labels</span>: [__meta_consul_tags]</div><div class="line">       <span class="attribute">regex</span>: .*,monitor,.*</div><div class="line">       <span class="attribute">action</span>: keep</div><div class="line">     - <span class="attribute">source_labels</span>: [__meta_consul_service]</div><div class="line">       <span class="attribute">target_label</span>: service</div></pre></td></tr></table></figure>
+<h5 id="With-ACL-Setting"><a href="#With-ACL-Setting" class="headerlink" title="With ACL Setting"></a>With ACL Setting</h5><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">scrape_configs</span>:</div><div class="line">  - <span class="attribute">job_name</span>: <span class="string">'consul_sd'</span></div><div class="line">    <span class="attribute">consul_sd_configs</span>:</div><div class="line">      - <span class="attribute">server</span>: <span class="string">'localhost:8500'</span></div><div class="line">        <span class="attribute">token</span>: <span class="string">'63c7ce81-1e3b-9081-dff5-d91ede002ceb'</span></div><div class="line">    <span class="attribute">relabel_configs</span>:</div><div class="line">      - <span class="attribute">source_labels</span>: [<span class="string">'__meta_consul_service'</span>]</div><div class="line">        <span class="attribute">regex</span>: prometheus\-(.+)</div><div class="line">        <span class="attribute">replacement</span>: <span class="string">'$&#123;1&#125;'</span></div><div class="line">        <span class="attribute">target_label</span>: <span class="string">'job'</span></div><div class="line">      - <span class="attribute">source_labels</span>: [<span class="string">'__meta_consul_service'</span>]</div><div class="line">        <span class="attribute">regex</span>: consul</div><div class="line">        <span class="attribute">action</span>: drop</div><div class="line">      - <span class="attribute">source_labels</span>: [<span class="string">'__meta_consul_node'</span>]</div><div class="line">        <span class="attribute">target_label</span>: <span class="string">'node'</span></div></pre></td></tr></table></figure>
+<h4 id="snmp-config"><a href="#snmp-config" class="headerlink" title="snmp_config"></a>snmp_config</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="attr">- job_name:</span> <span class="string">snmp_exporter-hwswitch20232</span></div><div class="line"><span class="attr">  params:</span></div><div class="line"><span class="attr">    module:</span></div><div class="line"><span class="bullet">    -</span> <span class="string">hwswitch</span></div><div class="line"><span class="attr">  scrape_interval:</span> <span class="number">1</span><span class="string">m</span></div><div class="line"><span class="attr">  scrape_timeout:</span> <span class="number">10</span><span class="string">s</span></div><div class="line"><span class="attr">  metrics_path:</span> <span class="string">/snmp</span></div><div class="line"><span class="attr">  scheme:</span> <span class="string">http</span></div><div class="line"><span class="attr">  static_configs:</span></div><div class="line"><span class="attr">  - targets:</span></div><div class="line"><span class="bullet">    -</span> <span class="number">10.200</span><span class="number">.3</span><span class="number">.233</span></div><div class="line"><span class="attr">    labels:</span></div><div class="line"><span class="attr">      business:</span> <span class="number">6</span><span class="string">f289f7e-e1c7-4e9a-b217-5580cd61f397</span></div><div class="line"><span class="attr">      sub_business:</span> <span class="string">d185b50e-cba2-40b8-8901-1181ecc63ad3</span></div><div class="line"><span class="attr">  relabel_configs:</span></div><div class="line"><span class="attr">  - source_labels:</span> <span class="string">[__address__]</span></div><div class="line"><span class="attr">    separator:</span> <span class="string">;</span></div><div class="line"><span class="attr">    regex:</span> <span class="string">(.*)</span></div><div class="line"><span class="attr">    target_label:</span> <span class="string">__param_target</span></div><div class="line"><span class="attr">    replacement:</span> <span class="string">$1</span></div><div class="line"><span class="attr">    action:</span> <span class="string">replace</span></div><div class="line"><span class="attr">  - source_labels:</span> <span class="string">[__param_target]</span></div><div class="line"><span class="attr">    separator:</span> <span class="string">;</span></div><div class="line"><span class="attr">    regex:</span> <span class="string">(.*)</span></div><div class="line"><span class="attr">    target_label:</span> <span class="string">instance</span></div><div class="line"><span class="attr">    replacement:</span> <span class="string">$1</span></div><div class="line"><span class="attr">    action:</span> <span class="string">replace</span></div><div class="line"><span class="attr">  - source_labels:</span> <span class="string">[]</span></div><div class="line"><span class="attr">    separator:</span> <span class="string">;</span></div><div class="line"><span class="attr">    regex:</span> <span class="string">(.*)</span></div><div class="line"><span class="attr">    target_label:</span> <span class="string">__address__</span></div><div class="line"><span class="attr">    replacement:</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span><span class="string">:20232</span></div><div class="line"><span class="attr">    action:</span> <span class="string">replace</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>snmp file_sd_config:</p>
+</blockquote>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="attr">- job_name:</span> <span class="string">snmp_exporter</span></div><div class="line"><span class="attr">  params:</span></div><div class="line"><span class="attr">    module:</span></div><div class="line"><span class="bullet">    -</span> <span class="string">hwswitch</span></div><div class="line"><span class="attr">  scrape_interval:</span> <span class="number">1</span><span class="string">m</span></div><div class="line"><span class="attr">  scrape_timeout:</span> <span class="number">10</span><span class="string">s</span></div><div class="line"><span class="attr">  metrics_path:</span> <span class="string">/snmp</span></div><div class="line"><span class="attr">  scheme:</span> <span class="string">http</span></div><div class="line">  </div><div class="line"><span class="attr">  file_sd_configs:</span></div><div class="line"><span class="attr">    - files:</span></div><div class="line"><span class="bullet">      -</span> <span class="string">'snmp_config/*.json'</span></div><div class="line">  </div><div class="line"><span class="attr">  relabel_configs:</span></div><div class="line"><span class="attr">  - source_labels:</span> <span class="string">[__address__]</span></div><div class="line"><span class="attr">    separator:</span> <span class="string">;</span></div><div class="line"><span class="attr">    regex:</span> <span class="string">(.*)</span></div><div class="line"><span class="attr">    target_label:</span> <span class="string">__param_target</span></div><div class="line"><span class="attr">    replacement:</span> <span class="string">$1</span></div><div class="line"><span class="attr">    action:</span> <span class="string">replace</span></div><div class="line"><span class="attr">  - source_labels:</span> <span class="string">[__param_target]</span></div><div class="line"><span class="attr">    separator:</span> <span class="string">;</span></div><div class="line"><span class="attr">    regex:</span> <span class="string">(.*)</span></div><div class="line"><span class="attr">    target_label:</span> <span class="string">instance</span></div><div class="line"><span class="attr">    replacement:</span> <span class="string">$1</span></div><div class="line"><span class="attr">    action:</span> <span class="string">replace</span></div><div class="line"><span class="attr">  - source_labels:</span> <span class="string">[]</span></div><div class="line"><span class="attr">    separator:</span> <span class="string">;</span></div><div class="line"><span class="attr">    regex:</span> <span class="string">(.*)</span></div><div class="line"><span class="attr">    target_label:</span> <span class="string">__address__</span></div><div class="line"><span class="attr">    replacement:</span> <span class="number">10.200</span><span class="number">.0</span><span class="number">.185</span><span class="string">:20232</span></div><div class="line"><span class="attr">    action:</span> <span class="string">replace</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>snmp.json</p>
+</blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">  &#123;</div><div class="line">    <span class="attr">"targets"</span>: [ <span class="string">"10.200.3.233"</span> ],</div><div class="line">    <span class="attr">"labels"</span>: &#123;</div><div class="line">      <span class="attr">"job"</span>: <span class="string">"snmp_h3c"</span></div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+<h2 id="Refers"><a href="#Refers" class="headerlink" title="Refers"></a>Refers</h2><ul>
+<li><p><a href="http://www.jianshu.com/p/2fb7208c8152" target="_blank" rel="external">Prometheus对Swarm的服务发现插件</a></p>
+</li>
+<li><p><a href="https://www.robustperception.io/finding-consul-services-to-monitor-with-prometheus/" target="_blank" rel="external">Finding Consul services to monitor with Prometheus</a></p>
+</li>
+<li><p><a href="https://www.robustperception.io/using-json-file-service-discovery-with-prometheus/" target="_blank" rel="external">Using JSON file service discovery with Prometheus</a></p>
+</li>
+</ul>
+
       
 
       
@@ -588,7 +230,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">django</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">prometheus</a>
         		</li>
       		
 		</ul>
@@ -597,18 +239,74 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/02/28/django-learning-notes/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://keleir.github.io/2018/03/27/prometheus-service-discovery/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/27/prometheus-storage/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Prometheus Storage</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
@@ -616,71 +314,10 @@
 
 
   
-    <article id="post-memcached-brief-usage" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/14/memcached-brief-usage/">Memcache简易说明</a>
-    </h1>
+    <div class="duoshuo"></div>
   
 
-        
-        <a href="/2016/01/14/memcached-brief-usage/" class="archive-article-date">
-  	<time datetime="2016-01-14T15:17:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-01-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://memcached.org/images/memcached_banner75.jpg" alt="memcached"></p>
-        
-          <a class="article-more-a" href="/2016/01/14/memcached-brief-usage/#more">more >></a>
-        
-      
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">memcache</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/01/14/memcached-brief-usage/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-  
 
 
           </div>
@@ -702,8 +339,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
