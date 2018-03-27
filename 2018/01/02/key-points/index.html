@@ -6,21 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://keleir.github.io">
-  <title>Memcache简易说明 | Kallen Ding&#39;s Blog</title>
+  <title>近期学习计划 | Kallen Ding&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.安装memcached12yum install memcachedmemcached -h 2.启动memcached1memcached -d -m 100 -c 1000 -u root -p 33060 参数说明：12345678910111213-d  启动一个守护进程-m  分配给Memcache使用的内存数量，单位是MB，默认为64M-u  运行Memcache的用户(only">
-<meta name="keywords" content="memcache">
+  <meta name="description" content="Language golang tornado  Service docker dockerfile docker-compose kubernetes swarm mesos consul ceph REST serviceless">
+<meta name="keywords" content="plan,point">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Memcache简易说明">
-<meta property="og:url" content="http://keleir.github.io/2016/01/14/memcached-brief-usage/index.html">
+<meta property="og:title" content="近期学习计划">
+<meta property="og:url" content="http://keleir.github.io/2018/01/02/key-points/index.html">
 <meta property="og:site_name" content="Kallen Ding&#39;s Blog">
-<meta property="og:description" content="1.安装memcached12yum install memcachedmemcached -h 2.启动memcached1memcached -d -m 100 -c 1000 -u root -p 33060 参数说明：12345678910111213-d  启动一个守护进程-m  分配给Memcache使用的内存数量，单位是MB，默认为64M-u  运行Memcache的用户(only">
-<meta property="og:image" content="http://memcached.org/images/memcached_banner75.jpg">
-<meta property="og:updated_time" content="2017-06-09T15:54:43.296Z">
+<meta property="og:description" content="Language golang tornado  Service docker dockerfile docker-compose kubernetes swarm mesos consul ceph REST serviceless">
+<meta property="og:updated_time" content="2017-06-15T17:54:16.273Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Memcache简易说明">
-<meta name="twitter:description" content="1.安装memcached12yum install memcachedmemcached -h 2.启动memcached1memcached -d -m 100 -c 1000 -u root -p 33060 参数说明：12345678910111213-d  启动一个守护进程-m  分配给Memcache使用的内存数量，单位是MB，默认为64M-u  运行Memcache的用户(only">
-<meta name="twitter:image" content="http://memcached.org/images/memcached_banner75.jpg">
+<meta name="twitter:title" content="近期学习计划">
+<meta name="twitter:description" content="Language golang tornado  Service docker dockerfile docker-compose kubernetes swarm mesos consul ceph REST serviceless">
   
     <link rel="alternative" href="/atom.xml" title="Kallen Ding&#39;s Blog" type="application/atom+xml">
   
@@ -152,101 +150,61 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-memcached-brief-usage" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-key-points" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Memcache简易说明
+      近期学习计划
     </h1>
   
 
         
-        <a href="/2016/01/14/memcached-brief-usage/" class="archive-article-date">
-  	<time datetime="2016-01-14T15:17:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-01-14</time>
+        <a href="/2018/01/02/key-points/" class="archive-article-date">
+  	<time datetime="2018-01-02T06:02:46.325Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://memcached.org/images/memcached_banner75.jpg" alt="memcached"></p>
-<h3 id="1-安装memcached"><a href="#1-安装memcached" class="headerlink" title="1.安装memcached"></a>1.安装memcached</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">yum <span class="keyword">install</span> memcached</div><div class="line">memcached -h</div></pre></td></tr></table></figure>
-<h3 id="2-启动memcached"><a href="#2-启动memcached" class="headerlink" title="2.启动memcached"></a>2.启动memcached</h3><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">memcached -d -m <span class="number">100</span> -c <span class="number">1000</span> -u root -p <span class="number">33060</span></div></pre></td></tr></table></figure>
-<h4 id="参数说明："><a href="#参数说明：" class="headerlink" title="参数说明："></a>参数说明：</h4><figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">-<span class="ruby">d  启动一个守护进程</span></div><div class="line"></div><div class="line">-<span class="ruby">m  分配给Memcache使用的内存数量，单位是MB，默认为<span class="number">64</span>M</span></div><div class="line"></div><div class="line">-<span class="ruby">u  运行Memcache的用户(only <span class="keyword">when</span> run as root)</span></div><div class="line"></div><div class="line">-<span class="ruby">l  监听的服务器IP地址</span></div><div class="line"></div><div class="line">-<span class="ruby">p  Memcache监听的端口,默认为<span class="number">11211</span>，最好是<span class="number">1024</span>以上的端口</span></div><div class="line"></div><div class="line">-<span class="ruby">c  最大运行的并发连接数，默认是<span class="number">1024</span>，按照服务器的负载量来设定</span></div><div class="line"></div><div class="line">-<span class="ruby">P  设置保存Memcache的pid文件</span></div></pre></td></tr></table></figure>
-<h3 id="3-查看memcached状态"><a href="#3-查看memcached状态" class="headerlink" title="3.查看memcached状态"></a>3.查看memcached状态</h3><h4 id="1-telnet-ip-port-gt-stats"><a href="#1-telnet-ip-port-gt-stats" class="headerlink" title="(1) telnet ip port ==&gt; stats"></a>(1) telnet ip port ==&gt; stats</h4><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"># telnet <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span> <span class="number">33060</span></div><div class="line">Trying <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>...</div><div class="line">Connected to <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>.</div><div class="line">Escape character is '^]'.</div><div class="line">stats</div><div class="line">STAT pid <span class="number">7483</span></div><div class="line">STAT uptime <span class="number">62616</span></div><div class="line">STAT time <span class="number">1484028645</span></div><div class="line">STAT version <span class="number">1.4</span><span class="number">.4</span></div><div class="line">STAT pointer_size <span class="number">64</span></div><div class="line">STAT rusage_user <span class="number">0.913861</span></div><div class="line">STAT rusage_system <span class="number">0.691894</span></div><div class="line">STAT curr_connections <span class="number">12</span></div><div class="line">STAT total_connections <span class="number">16</span></div><div class="line">STAT connection_structures <span class="number">13</span></div><div class="line">STAT cmd_get <span class="number">15</span></div><div class="line">STAT cmd_set <span class="number">5</span></div><div class="line">STAT cmd_flush <span class="number">0</span></div><div class="line">STAT get_hits <span class="number">9</span></div><div class="line">STAT get_misses <span class="number">6</span></div><div class="line">STAT delete_misses <span class="number">0</span></div><div class="line">STAT delete_hits <span class="number">0</span></div><div class="line">STAT incr_misses <span class="number">0</span></div><div class="line">STAT incr_hits <span class="number">0</span></div><div class="line">STAT decr_misses <span class="number">0</span></div><div class="line">STAT decr_hits <span class="number">0</span></div><div class="line">STAT cas_misses <span class="number">0</span></div><div class="line">STAT cas_hits <span class="number">0</span></div><div class="line">STAT cas_badval <span class="number">0</span></div><div class="line">STAT auth_cmds <span class="number">0</span></div><div class="line">STAT auth_errors <span class="number">0</span></div><div class="line">STAT bytes_read <span class="number">5657</span></div><div class="line">STAT bytes_written <span class="number">21447</span></div><div class="line">STAT limit_maxbytes <span class="number">104857600</span></div><div class="line">STAT accepting_conns <span class="number">1</span></div><div class="line">STAT listen_disabled_num <span class="number">0</span></div><div class="line">STAT threads <span class="number">4</span></div><div class="line">STAT conn_yields <span class="number">0</span></div><div class="line">STAT bytes <span class="number">5225</span></div><div class="line">STAT curr_items <span class="number">3</span></div><div class="line">STAT total_items <span class="number">5</span></div><div class="line">STAT evictions <span class="number">0</span></div><div class="line">END</div></pre></td></tr></table></figure>
-<h4 id="2-模拟top命令"><a href="#2-模拟top命令" class="headerlink" title="(2) 模拟top命令"></a>(2) 模拟top命令</h4><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">watch <span class="string">"printf 'stats\r<span class="subst">\n</span>' | nc 127.0.0.1 33060"</span></div></pre></td></tr></table></figure>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">watch</span> <span class="string">"echo stats | nc 127.0.0.1 33060"</span></div></pre></td></tr></table></figure>
-<h3 id="4-Python-memcached-API"><a href="#4-Python-memcached-API" class="headerlink" title="4.Python-memcached API"></a>4.Python-memcached API</h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> memcache</div><div class="line"></div><div class="line">mc = memcache.Client([<span class="string">'127.0.0.1:33060'</span>], debug=<span class="number">0</span>)</div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    mc.<span class="keyword">set</span>(<span class="string">'name'</span>, <span class="string">'kallen'</span>)</div><div class="line">    mc.<span class="keyword">set</span>(<span class="string">'mail'</span>, <span class="string">'kallen@mail.com'</span>)</div><div class="line">    name = mc.<span class="keyword">get</span>(<span class="string">'name'</span>)</div><div class="line">    mail = mc.<span class="keyword">get</span>(<span class="string">'mail'</span>)</div><div class="line">    <span class="built_in">print</span> name, mail</div></pre></td></tr></table></figure>
-<h4 id="主要方法如下："><a href="#主要方法如下：" class="headerlink" title="主要方法如下："></a>主要方法如下：</h4><ul>
-<li><code>@set(key, val, time=0, min_compress_len=0)</code></li>
+        <h2 id="Language"><a href="#Language" class="headerlink" title="Language"></a>Language</h2><ul>
+<li>golang</li>
+<li>tornado</li>
 </ul>
-<blockquote>
-<p>无条件键值对的设置，其中的time用于设置超时，单位是秒</p>
-<p>min_compress_len则用于设置zlib压缩</p>
-</blockquote>
-<ul>
-<li><code>@set_multi(mapping, time=0, key_prefix=&#39;&#39;, min_compress_len=0)</code></li>
+<h2 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h2><ul>
+<li>docker</li>
+<li>dockerfile</li>
+<li>docker-compose</li>
+<li>kubernetes</li>
+<li>swarm</li>
+<li>mesos</li>
+<li>consul</li>
+<li>ceph</li>
+<li>REST</li>
+<li>serviceless</li>
 </ul>
-<blockquote>
-<p>设置多个键值对，key_prefix是key的前缀，完整的键名是key_prefix+key, </p>
-<p>使用方法如下：</p>
-</blockquote>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mc.set_multi(&#123;<span class="symbol">'k1</span>' : 1, '<span class="type">k2</span>' : 2&#125;, <span class="type">key_prefix</span>=<span class="symbol">'pfx</span>_') </div><div class="line">mc.get_multi([<span class="symbol">'k1</span>', <span class="symbol">'k2</span>', <span class="symbol">'nonexist</span>'], key_prefix=<span class="symbol">'pfx</span>_')</div><div class="line">&#123;<span class="symbol">'k1</span>' : 1, '<span class="type">k2</span>' : 2&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li><code>@add(key, val, time=0, min_compress_len=0)</code></li>
+<a id="more"></a>
+<h2 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h2><ul>
+<li>jenkins</li>
+<li>CI/CD</li>
+<li>shipyard</li>
 </ul>
-<blockquote>
-<p>添加一个键值对，内部调用_set()方法</p>
-</blockquote>
-<ul>
-<li><code>@replace(key, val, time=0, min_compress_len=0)</code></li>
-</ul>
-<blockquote>
-<p>替换value，内部调用_set()方法</p>
-</blockquote>
-<ul>
-<li><code>@get(key)</code></li>
-</ul>
-<blockquote>
-<p>根据key去获取value，出错返回None</p>
-</blockquote>
-<ul>
-<li><code>@get_multi(keys, key_prefix=&#39;&#39;)</code></li>
-</ul>
-<blockquote>
-<p>获取多个key的值，返回的是字典, keys为key的列表</p>
-</blockquote>
-<ul>
-<li><code>@delete(key, time=0)</code></li>
-</ul>
-<blockquote>
-<p>删除某个key, time的单位为秒;</p>
-<p>用于确保在特定时间内的set和update操作会失败。</p>
-<p>如果返回非0则代表成功</p>
-</blockquote>
-<ul>
-<li><code>@incr(key, delta=1)</code></li>
-</ul>
-<blockquote>
-<p>自增变量加上delta，默认加1，使用如下</p>
-</blockquote>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">mc</span><span class="selector-class">.set</span>(<span class="string">"counter"</span>, <span class="string">"20"</span>)  </div><div class="line"><span class="selector-tag">mc</span><span class="selector-class">.incr</span>(<span class="string">"counter"</span>)</div><div class="line"><span class="selector-tag">21</span></div></pre></td></tr></table></figure>
-<ul>
-<li><code>@decr(key,delta=1)</code></li>
-</ul>
-<blockquote>
-<p>自减变量减去delta，默认减1</p>
-</blockquote>
-<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># memcached 初始化</span></div><div class="line">mc = memcache.Client([<span class="comment">'服务器A IP:11211'], debug=0)</span></div><div class="line"></div><div class="line"><span class="keyword">class</span> test:</div><div class="line">    def <span class="keyword">GET</span>(self):</div><div class="line">        sql = <span class="string">"select * from table"</span></div><div class="line">        m = hashlib.md5(sql)</div><div class="line">        <span class="keyword">key</span> = m.hexdigest()</div><div class="line"></div><div class="line">        retval = []</div><div class="line">        <span class="keyword">if</span> mc.<span class="keyword">get</span>(<span class="keyword">key</span>):</div><div class="line">            retval = mc.<span class="keyword">get</span>(<span class="keyword">key</span>)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            retval = db.query(sql).list()</div><div class="line">            mc.<span class="keyword">set</span>(<span class="keyword">key</span>, retval )</div><div class="line">         </div><div class="line">        <span class="meta"># 断开连接</span></div><div class="line">        mc.disconnect_all()</div></pre></td></tr></table></figure>
-<h3 id="REFERENCE"><a href="#REFERENCE" class="headerlink" title="[REFERENCE]"></a>[REFERENCE]</h3><ul>
-<li><a href="https://cloud.google.com/appengine/docs/python/memcache/examples" target="_blank" rel="external">Memcache Examples</a></li>
-<li><a href="https://my.oschina.net/flynewton/blog/9694" target="_blank" rel="external">Linux下安装memcached</a></li>
-<li><a href="https://lxneng.com/posts/39" target="_blank" rel="external">Memcached的Client方法介绍</a></li>
-<li><a href="https://my.oschina.net/flynewton/blog/10660" target="_blank" rel="external">Python-memcached的基本使用</a></li>
-<li><a href="https://groups.google.com/forum/#!topic/python-cn/A1BG4luYj94" target="_blank" rel="external">python memcached 邮件列表</a></li>
+<h2 id="Reading"><a href="#Reading" class="headerlink" title="Reading"></a>Reading</h2><ul>
+<li><p>Docker进阶与实践</p>
+</li>
+<li><p>Ceph分布式存储实战</p>
+</li>
+<li><p>GoWeb编程</p>
+</li>
+<li><p>设计模式之禅</p>
+</li>
+<li><p>SER: Google运维解密</p>
+</li>
+<li><p>Google工作整理术</p>
+</li>
 </ul>
 
       
@@ -261,7 +219,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">memcache</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">plan</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">point</a>
         		</li>
       		
 		</ul>
@@ -317,7 +279,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://keleir.github.io/2016/01/14/memcached-brief-usage/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://keleir.github.io/2018/01/02/key-points/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -331,15 +293,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/02/28/django-learning-notes/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Django基础简介
-        
-      </div>
-    </a>
   
+    <a href="/2016/05/16/the-kite-runner-reading-notes/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">《追风筝的人》读书札记</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
