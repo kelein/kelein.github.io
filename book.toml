@@ -1,0 +1,6 @@
+[book]
+title = "云原生技术栈"
+authors = ["kallen"]
+language = "en"
+multilingual = true
+src = "src"
